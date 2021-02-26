@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  padding: 3.4rem 1.3rem 0;
+}
+section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 2.6rem;
+}
+.left,
+.right {
+  width: 100%;
+}
+.left h3 {
+  color: rgb(36, 33, 33);
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+.right h4 {
+  margin-bottom: 0.8rem;
+  font-size: 1.5rem;
+  color: rgb(54, 56, 58);
+}
+.right p {
+  font-size: 1.3rem;
+  color: rgb(56, 57, 58);
+}
+.avatars {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: space-between;
+}
+.avatar {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.avatar .top {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+}
+.top img {
+  width: 90%;
+}
+.top .job {
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  white-space: nowrap;
+  font-size: 0.8rem;
+  width: 10%;
+}
+.name {
+  color: rgb(22, 19, 19);
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 15px 0 0;
+  width: 90%;
+}
+.down {
+  margin-top: 4rem;
+}
+footer{
+    padding: 4rem 1rem 20px
+}
+footer p{
+    color: rgba(138, 133, 133, 0.568);
+    text-align: center;
+    font-family:'Poppins', sans-serif;
+    font-size: 12px;
+ }
+
+@media (min-width: 516px) {
+  .top img {
+    width: 92%;
+  }
+  .top .job {
+    font-size: 1rem;
+    width: 7%;
+  }
+  section{
+      padding: 1rem;
+  }
+}
+@media (min-width: 1000px) {
+    section{
+        flex-direction: row;
+    }
+  .avatar {
+    width: 32%;
+  }
+  .downward{
+    margin-top: 8rem;
+  }
+}
